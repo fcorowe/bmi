@@ -4,4 +4,4 @@ This repository contains the required code to reproduce the results reported on 
 
 Access to the published article: 
 
-![Differences across the BMI distribution](figure/bmiDiff_qplot.png)
+![Differences across the BMI distribution, 2002/4 - 2012/4](figure/bmiDiff_qplot.png)
