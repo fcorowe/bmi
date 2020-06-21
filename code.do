@@ -9,7 +9,7 @@ set more off
 set matsize 2000
 set memory 2g
 cd "../Data"
-use "hse_combined_s11_12062020"
+use "<data_file_name>"
 compress
 
 svyset [pweight= weight]
@@ -55,14 +55,14 @@ replace phyact=1 if physact1==1
 	label values time time	
 
 *Clean data
-save "clean_data_obesity12062020.dta", replace
+save "<new_data_file_name>", replace
 
 *******************************
 *** Table 1: Raw Differences in BMI
 *******************************
 clear all
 set memory 3g
-use "clean_data_obesity12062020.dta"
+use "<new_data_file_name>"
 compress
 
 	* "raw" BMI difference at percentiles 10, 25, 50, 75 and 90;
@@ -401,7 +401,7 @@ clear all
 set more off
 set matsize 2000
 cd "../Data"
-use "clean_data_obesity12062020.dta"
+use "<new_data_file_name>"
 compress
 				
 forvalues qt = 10(40)90 {	
@@ -463,7 +463,7 @@ set more off
 set matsize 2000
 set memory 2g
 cd "../Data"
-use "clean_data_obesity12062020.dta"
+use "<new_data_file_name>"
 compress
 				
 forvalues qt = 10(40)90 {	
@@ -533,7 +533,7 @@ clear all
 set more off
 set matsize 2000
 cd "../Data"
-use "clean_data_obesity12062020.dta"
+use "<new_data_file_name>"
 compress
 				
 forvalues qt = 10(40)90 {	
