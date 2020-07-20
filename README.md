@@ -2,7 +2,7 @@
 Mark Green<sup>1</sup>, 
 Francisco Rowe<sup>1</sup>
 
-<sup>1</sup>*Geographic Data Science Lab, University of Liverpool, UK*
+<sup>1</sup>*Geographic Data Science Lab, University of Liverpool, United Kingdom*
 
 **Abstract**
 
